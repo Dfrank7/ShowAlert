@@ -1,3 +1,3 @@
 # ShowAlert
 
-[![CircleCI](https://app.circleci.com/pipelines/github/Dfrank7/ShowAlert/10/workflows/6f6b4e29-57ea-48e3-ad0e-b9f24a661c4a/jobs/10.svg?style=shield)](https://app.circleci.com/pipelines/github/Dfrank7/ShowAlert/10/workflows/6f6b4e29-57ea-48e3-ad0e-b9f24a661c4a/jobs/10)
+[![CircleCI](https://circleci.com/gh/Dfrank7/Journal-App/tree/master.svg?style=shield)](https://circleci.com/gh/Dfrank7/Journal-App/tree/master)  [![Maintainability](https://api.codeclimate.com/v1/badges/2ee0b2bb54f2530e708b/maintainability)](https://codeclimate.com/github/Dfrank7/Journal-App/maintainability)
