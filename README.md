@@ -40,7 +40,7 @@ Add this in your root build.gradle at the end of repositories:
 
                   }
               )
-              ```
+  ```
   * This method takes 4 parameters .
   * activity, Title in String, Message in String and an Onclicklistener.
 
