@@ -8,10 +8,12 @@
 ## Using ShowAlert Library in your Android application
 Add this in your root build.gradle at the end of repositories
   ```groovy
-       	repositories {
-      			...
-      			maven { url 'https://jitpack.io' }
-       		}
+       	allprojects {
+        		repositories {
+        			...
+        			maven { url 'https://jitpack.io' }
+        		}
+        	}
   ```
 
  Add this dependency
