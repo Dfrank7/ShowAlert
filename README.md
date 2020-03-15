@@ -7,17 +7,17 @@
 
 ## Using ShowAlert Library in your Android application
 Add this in your root build.gradle at the end of repositories:
-        allprojects {
+      ```groovy
         		repositories {
         			...
         			maven { url 'https://jitpack.io' }
         		}
-        	}
+      ```
 
- Step 2. Add the dependency
- dependencies {
- 	        implementation 'com.github.Dfrank7:ShowAlert:1.0.0'
- 	}
+ Add this dependency
+ ```groovy
+     implementation 'com.github.Dfrank7:ShowAlert:1.0.0'
+ ```
 
  Initialize alert in your activity
    ```java
