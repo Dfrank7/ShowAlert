@@ -6,13 +6,13 @@
 <img src=https://user-images.githubusercontent.com/19290965/76708030-23fc1d80-66f4-11ea-98ac-a88ad0e85b2e.gif alt="Shutdown in action" width=360 height=640/>
 
 ## Using ShowAlert Library in your Android application
-Add this in your root build.gradle at the end of repositories:
-      ```groovy
-        		repositories {
-        			...
-        			maven { url 'https://jitpack.io' }
-        		}
-      ```
+Add this in your root build.gradle at the end of repositories
+  ```groovy
+       	repositories {
+      			...
+      			maven { url 'https://jitpack.io' }
+       		}
+  ```
 
  Add this dependency
  ```groovy
