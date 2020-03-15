@@ -12,7 +12,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import kotlinx.android.synthetic.main.alert_activity.view.*
 
-class SweetAlert {
+class ShowAlert {
 
     var displayMetrics = DisplayMetrics()
 
