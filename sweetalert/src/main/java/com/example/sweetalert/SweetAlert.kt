@@ -11,6 +11,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Button
 import kotlinx.android.synthetic.main.alert_activity.view.*
+import kotlin.math.roundToInt
 
 class ShowAlert {
 
@@ -22,7 +23,6 @@ class ShowAlert {
 
     fun showSuccessAlert(activity: AppCompatActivity, title : String, message : String, clickListener: OnClickListener){
         activity.windowManager.defaultDisplay.getMetrics(displayMetrics)
-        var height = displayMetrics.heightPixels
         var width = displayMetrics.widthPixels
         var viewGroup = activity.findViewById<ViewGroup>(android.R.id.content)
         var dialogView = LayoutInflater.from(activity).inflate(R.layout.alert_activity, viewGroup, false)
@@ -49,13 +49,13 @@ class ShowAlert {
             dialog.dismiss()
         }
         dialog.show()
-        dialog.window!!.setLayout(width-200, ViewGroup.LayoutParams.WRAP_CONTENT)
+        val widthToset = ((70.0/100.0) *width).roundToInt()
+        dialog.window!!.setLayout(widthToset, ViewGroup.LayoutParams.WRAP_CONTENT)
 
     }
 
     fun showFailureAlert(activity: AppCompatActivity, title: String, message: String, clickListener: OnClickListener) {
         activity.windowManager.defaultDisplay.getMetrics(displayMetrics)
-        var height = displayMetrics.heightPixels
         var width = displayMetrics.widthPixels
         var viewGroup = activity.findViewById<ViewGroup>(android.R.id.content)
 
@@ -81,7 +81,8 @@ class ShowAlert {
             dialog.dismiss()
         }
         dialog.show()
-        dialog.window!!.setLayout(width-200, ViewGroup.LayoutParams.WRAP_CONTENT)
+        val widthToset = ((70.0/100.0) *width).roundToInt()
+        dialog.window!!.setLayout(widthToset, ViewGroup.LayoutParams.WRAP_CONTENT)
 
     }
 }
