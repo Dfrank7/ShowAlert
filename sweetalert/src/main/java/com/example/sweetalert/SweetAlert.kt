@@ -20,7 +20,7 @@ class ShowAlert {
     internal lateinit var avd : AnimatedVectorDrawableCompat
     internal lateinit var avd2 : AnimatedVectorDrawable
 
-    fun showSuccessAlert(activity: AppCompatActivity, title : String, message : String, clickListener: OnClickListener){
+    fun showSuccessAlert(activity: AppCompatActivity, title : String, message : String, clickListener: OnClickListener, text: String){
         activity.windowManager.defaultDisplay.getMetrics(displayMetrics)
         var width = displayMetrics.widthPixels
         var viewGroup = activity.findViewById<ViewGroup>(android.R.id.content)
@@ -30,6 +30,7 @@ class ShowAlert {
         builder.setView(dialogView)
         builder.setCancelable(false)
         var dialog = builder.create()
+        dialogView.buttonOk.text = text
         dialogView.title.text = title
         dialogView.message.text =message
         if (drawable is AnimatedVectorDrawableCompat) {
@@ -53,7 +54,7 @@ class ShowAlert {
 
     }
 
-    fun showFailureAlert(activity: AppCompatActivity, title: String, message: String, clickListener: OnClickListener) {
+    fun showFailureAlert(activity: AppCompatActivity, title: String, message: String, clickListener: OnClickListener, text: String) {
         activity.windowManager.defaultDisplay.getMetrics(displayMetrics)
         var width = displayMetrics.widthPixels
         var viewGroup = activity.findViewById<ViewGroup>(android.R.id.content)
@@ -64,6 +65,7 @@ class ShowAlert {
         var builder = AlertDialog.Builder(activity, R.style.CustomAlertDialog)
         builder.setView(dialogView)
         builder.setCancelable(false)
+        dialogView.buttonCancel.text = text
         var dialog = builder.create()
         dialogView.message.text = message
         dialogView.title.text = title
