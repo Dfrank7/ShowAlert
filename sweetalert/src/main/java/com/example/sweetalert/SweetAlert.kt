@@ -78,12 +78,12 @@ class ShowAlert {
         var buttonOk = dialogView.findViewById<Button>(R.id.buttonOk)
         buttonOk.background = activity.getDrawable(R.drawable.button_background_failed)
         buttonOk.setOnClickListener {
-            clickListener.setCancelButton(it)
+            clickListener.setOkayButton(it)
             dialog.dismiss()
         }
         dialogView.buttonCancel.background = activity.getDrawable(R.drawable.button_background_failed)
         dialogView.buttonCancel.setOnClickListener {
-            //clickListener.setCancelButton(it)
+            clickListener.setCancelButton(it)
             dialog.dismiss()
         }
         dialog.show()
